@@ -1,0 +1,8 @@
+.metadata/ 
+target/ 
+*.log 
+.idea/ 
+*.class 
+test-output/ 
+*/test-output/ 
+test-output/ 
