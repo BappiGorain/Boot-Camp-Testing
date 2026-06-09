@@ -25,8 +25,6 @@ public class ComparingValuesDemo
 	@Test
 	public void compare()
 	{
-		
-		
 		driver.findElement(By.name("username")).sendKeys("student");
 		driver.findElement(By.name("password")).sendKeys("Password123");
 		driver.findElement(By.xpath("//button[@id='submit']")).click();
