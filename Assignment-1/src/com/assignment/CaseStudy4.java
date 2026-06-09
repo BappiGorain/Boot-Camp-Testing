@@ -2,6 +2,7 @@ package com.assignment;
 
 import java.util.List;
 
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,11 +11,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class CaseStudy3
+public class CaseStudy4
 {
 	
 	WebDriver driver;
-	String url = "https://www.easycalculation.com/";
+	String url = "https://store.webkul.com";
 	
 	@BeforeTest
 	public void setUp()
@@ -26,9 +27,8 @@ public class CaseStudy3
 	
 	
 	@Test
-	public void case3()
+	public void case4()
 	{
-		
 		List<WebElement> totalLinks = driver.findElements(By.xpath("//a"));	
 		
 		System.out.println("Total Links : " + totalLinks.size());
@@ -36,6 +36,8 @@ public class CaseStudy3
 		for(var link : totalLinks)
 			System.out.println(link.getText());
 		
+		String title = driver.getTitle();
+		System.out.println(title);
 	}
 	
 	@AfterTest
@@ -43,4 +45,7 @@ public class CaseStudy3
 	{
 		driver.quit();
 	}
+	
+	
+	
 }
