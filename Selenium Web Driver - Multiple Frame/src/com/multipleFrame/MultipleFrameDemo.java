@@ -22,7 +22,7 @@ public class MultipleFrameDemo
 	@Test
 	public void frame() throws InterruptedException
 	{
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 		int totalNumberOfFrames = driver.findElements(By.tagName("iframe")).size();
 		System.out.println(totalNumberOfFrames);
 		
@@ -41,7 +41,7 @@ public class MultipleFrameDemo
 		
 		
 //		driver.switchTo().frame("selenium");
-		driver.navigate().to("https://www.selenium.dev/");
+//		driver.navigate().to("https://www.selenium.dev/");
 		
 		driver.findElement(By.xpath("//span[normalize-space()='Downloads']")).click();
 		Thread.sleep(5000);
@@ -49,7 +49,7 @@ public class MultipleFrameDemo
 		System.out.println("Title : " + title1);
 		
 		
-		driver.navigate().to(url);
+//		driver.navigate().to(url);
 		Thread.sleep(5000);
 		
 //		driver.findElement(By.xpath("/html/body/a")).click();
