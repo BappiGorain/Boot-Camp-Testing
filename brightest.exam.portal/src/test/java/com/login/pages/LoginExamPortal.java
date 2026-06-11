@@ -13,19 +13,19 @@ public class LoginExamPortal
 		this.driver = driver;
 	}
 	
-	@FindBy(id="//input[@id='id_email']")
+	@FindBy(xpath="//input[@id='id_email']")
 	WebElement email;
 	
-	@FindBy(id="//input[@id='id_email2']")
+	@FindBy(xpath="//input[@id='id_email2']")
 	WebElement confirmEmail;
 	
-	@FindBy(id="//input[@id='id_password1']")
+	@FindBy(xpath="//input[@id='id_password1']")
 	WebElement password1;
 	
-	@FindBy(id="//input[@id='id_password2']")
+	@FindBy(xpath="//input[@id='id_password2']")
 	WebElement password2;
 	
-	@FindBy(id="//button[normalize-space()='Create Account']")
+	@FindBy(xpath ="//button[normalize-space()='Create Account']")
 	WebElement confirm;
 	
 	
