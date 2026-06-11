@@ -7,10 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class ScrollUpAndScrollDown2
 {
 	WebDriver driver;
-	String url = "https://www.nopcommerce.com";
+	String url = "https://www.selenium.dev/downloads/";
 	
 	@org.testng.annotations.Test
-	public void Test() throws InterruptedException
+	public void scroll() throws InterruptedException
 	{
 		driver = new ChromeDriver();
 		driver.navigate().to(url);
