@@ -6,7 +6,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class PracticeTestAutomationLogin
 {
+	
 	WebDriver driver;
+	
 	public PracticeTestAutomationLogin(WebDriver driver)
 	{
 		this.driver = driver;
