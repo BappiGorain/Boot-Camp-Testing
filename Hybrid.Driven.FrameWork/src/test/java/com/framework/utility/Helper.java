@@ -22,12 +22,12 @@ public class Helper
 			FileUtils.copyFile(source, new File("./ScreenShots/EasyCalculation_" + getCurrentDateTime() +".png"));
 			System.out.println("Captured ScreenShot - On Failure");
 		}
-		catch (Exception e) 
+		catch (Exception e)
 		{
 			System.err.println("Exception Whil Taking ScreenShot : " + e.getMessage());
 		}	
 	}
-	
+																													
 	public static String getCurrentDateTime() 
 	{
 		DateFormat customFormat = new SimpleDateFormat("MM_dd_yyyy_HH_mm_ss");

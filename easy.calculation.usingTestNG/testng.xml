@@ -2,7 +2,7 @@
 <suite name="Suite" parallel="tests">
 
     <test name="ChromeBrowser">
-        <parameter name="browserName" value="chrome"/>
+        <parameter name="browserName" value="chrome"></parameter>
         <classes>
             <class name="easy.calculation.Login.EasyCalculationTestNG"/>
         </classes>
@@ -21,4 +21,10 @@
             <class name="easy.calculation.Login.EasyCalculationTestNG"/>
         </classes>
     </test> 
+    
+    <test thread-count="5" name="Test">
+    	<classes>
+    		<class name="easy.calculation.Login.EasyCalculationTestNG" />
+    	</classes>
+    </test>
 </suite>
